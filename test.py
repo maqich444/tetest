@@ -1,7 +1,14 @@
-a = 5
-b = 8 
-c = 7
+# Fənlər və qiymətlər
+imtahan_neticeleri = {
+    "Riyaziyyat": 85,
+    "Fizika": 78,
+    "Kimya": 90,
+    "İngilis dili": 88,
+    "Tarix": 76
+}
 
-x = a + b + c 
+# Orta qiyməti hesabla
+ortalama = sum(imtahan_neticeleri.values()) / len(imtahan_neticeleri)
 
-print(x)
+# Nəticəni çap et
+print(f"Tələbənin orta qiyməti: {ortalama:.2f}")
